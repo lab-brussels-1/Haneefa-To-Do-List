@@ -61,6 +61,11 @@ h1 {
     
 }
 
+p {
+    float: left;
+    margin-top: -20px;
+}
+
 .removeButton{
     float: right;
     background-color: rgb(255, 98, 30);
@@ -69,6 +74,7 @@ h1 {
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: -20px;
 }
 
 
@@ -77,11 +83,30 @@ h1 {
     font-size: 1rem;
 }
 
+.editButton{
+    float: right;
+    background-color: rgb(53, 255, 30);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right:20px;
+    margin-top: -20px;
+}
+
+
+.editButton:hover{
+    color: rgba(30, 255, 49, 0.633);
+    font-size: 1rem;
+}
+
 .container{
     text-align: right;
 }
 
 .item{
-    padding: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 7px;
     border-bottom: 4px solid black;
 }
