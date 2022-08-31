@@ -39,13 +39,6 @@ function addFunction () {
                   container.appendChild(textLabel);
                   root.append(container);
                   
-              
-              
-                  const editButton = document.createElement('button');
-                  editButton.classList.add('editButton');
-                  editButton.textContent= "Edit";
-                  container.appendChild(editButton);
-              
                   const removeButton = document.createElement('button');
                   removeButton.classList.add('removeButton');
                   const trashIcon = document.createElement('i');
@@ -54,6 +47,15 @@ function addFunction () {
                   removeButton.appendChild(trashIcon);
                   container.appendChild(removeButton);
               
+                  const editButton = document.createElement('button');
+                  editButton.classList.add('editButton');
+                  const editIcon = document.createElement('i');
+                  editIcon.classList.add('fa');
+                  editIcon.classList.add('fa-pencil-square');
+                  editButton.appendChild(editIcon);
+                  container.appendChild(editButton);
+              
+                  
                   removeButton.addEventListener("click", function() {
                       container.remove()
                     });
